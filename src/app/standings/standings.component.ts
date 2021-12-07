@@ -25,7 +25,7 @@ export class StandingsComponent implements OnInit {
     this.getTeams();
     this.LeagueName = "Liga BRI";
     this.getSchedule();
-    this.ComputeRangkings();
+    this.ComputeRankings();
    }
 
   ngOnInit(): void {
@@ -48,7 +48,7 @@ export class StandingsComponent implements OnInit {
       this.MySchedule = this._soccerService.getSchedule();
     }
   }
-  public ComputeRangkings(){
+  public ComputeRankings(){
     var curDate: Date = new Date();
     var TeamAt:number;
     this.Standings = [];
